@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#2573FA">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/back2"
+            android:elevation="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/noteDate"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content"
+                    android:text="17.11.2022, 19:00"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:textColor="@color/white"
+                    android:textSize="18dp"/>
+
+
+
+                <TextView
+                    android:id="@+id/noteMessage"
+                    android:layout_below="@id/noteDate"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_height="wrap_content"
+                    android:text="Temperatura spadła poniżej 27 °C"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:textColor="@color/white"
+                    android:textSize="14dp"/>
+
+
+                <TextView
+                    android:id="@+id/noteTxt"
+                    android:layout_toRightOf="@id/noteDate"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="75dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content"
+                    android:text="Wartość pomiaru:"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:textColor="@color/white"
+                    android:textSize="13dp"/>
+
+                <TextView
+                    android:id="@+id/noteValue"
+                    android:layout_toRightOf="@id/noteMessage"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginTop="27dp"
+                    android:layout_height="wrap_content"
+                    android:text="27,72°C"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:textColor="@color/white"
+                    android:textSize="27dp"/>
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

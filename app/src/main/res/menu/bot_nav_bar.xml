@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <item
+        android:id="@+id/home"
+        android:title="Home"
+        android:icon="@drawable/home_white" />
+    <item
+        android:id="@+id/graphs"
+        android:title="Graphs"
+        android:icon="@drawable/graph_white" />
+    <item
+        android:id="@+id/notifications"
+        android:title="Notifications"
+        android:icon="@drawable/notifications_white"
+        />
+
+    <item
+        android:id="@+id/settings"
+        android:title="Settingds"
+        android:icon="@drawable/settings_white" />
+</menu>

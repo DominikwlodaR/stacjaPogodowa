@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "787899399572",
+    "firebase_url": "https://arduino-test2-581cd-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "arduino-test2-581cd",
+    "storage_bucket": "arduino-test2-581cd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:787899399572:android:76343f331266d0c904e381",
+        "android_client_info": {
+          "package_name": "com.example.stacjapogodowa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "787899399572-cbebuqdm021m3j736rq3tsohd58o3ise.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCz9j-p38jrH7XlcF1g7Gar413PfbOxOeo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "787899399572-cbebuqdm021m3j736rq3tsohd58o3ise.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

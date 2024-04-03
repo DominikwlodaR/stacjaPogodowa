@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="lastfife" type="id" />
+    <item name="lastFife" type="id" />
+    <item name="lastHour" type="id" />
+    <item name="last2Hour" type="id" />
+    <item name="last3Hour" type="id" />
+    <item name="last4Hour" type="id" />
+    <item name="test1" type="id" />
+</resources>

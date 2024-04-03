@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:id="@+id/info"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:elevation="6dp"
+        tools:ignore="MissingConstraints">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/header"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/back2"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:elevation="8dp"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:text="Ustawienia wykresu"
+                    android:textColor="@color/white"
+                    android:textSize="22dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="sans-serif-condensed-light"/>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_below="@+id/header"
+                android:id="@+id/first"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/back1"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp"
+                android:elevation="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@drawable/back2"
+                        android:id="@+id/title">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:text="Wykres zmian w czasie"
+                            android:textColor="@color/white"
+                            android:textSize="18dp"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="sans-serif-condensed-light"/>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/back3"
+                        android:layout_below="@+id/title"
+                        android:layout_margin="15dp">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/start"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:text="Data początkowa"
+                                android:paddingTop="5dp"
+                                android:textColor="@color/white"
+                                android:textSize="18dp"
+                                android:fontFamily="sans-serif-condensed-light"
+                                android:textAlignment="center"
+                                android:background="@drawable/back2"/>
+
+                            <EditText
+                                android:layout_below="@id/start"
+                                android:id="@+id/startDate"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="data"
+                                android:inputType="date"
+                                android:textColor="@color/white"
+                                android:textSize="15dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginLeft="35dp"
+                                android:layout_marginRight="35dp"/>
+
+
+
+                            <TextView
+                                android:id="@+id/end"
+                                android:layout_below="@id/startDate"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:layout_marginTop="3dp"
+                                android:text="Data końcowa"
+                                android:paddingTop="5dp"
+                                android:textColor="@color/white"
+                                android:textSize="18dp"
+                                android:fontFamily="sans-serif-condensed-light"
+                                android:textAlignment="center"
+                                android:background="@drawable/back2"/>
+
+
+                            <EditText
+                                android:id="@+id/endDate"
+                                android:layout_below="@id/end"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="data"
+                                android:inputType="date"
+                                android:textColor="@color/white"
+                                android:textSize="15dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginLeft="35dp"
+                                android:layout_marginRight="35dp"/>
+
+
+                            <TextView
+                                android:id="@+id/statistic"
+                                android:layout_below="@id/endDate"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:layout_marginTop="5dp"
+                                android:paddingTop="5dp"
+                                android:text="Rodzaj pomiaru"
+                                android:textColor="@color/white"
+                                android:textSize="18dp"
+                                android:fontFamily="sans-serif-condensed-light"
+                                android:textAlignment="center"
+                                android:background="@drawable/back2"/>
+
+
+                            <RadioGroup
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/statistic"
+                                android:layout_centerHorizontal="true"
+                                android:orientation="vertical"
+                                android:layout_marginTop="10dp"
+                                android:id="@+id/radioGroupStat" >
+
+
+
+                            <RadioButton
+                                android:id="@+id/radioTemperature"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif-condensed-light"
+                                android:text="temperatura"
+                                android:textSize="20dp"
+                                android:checked="false"
+                                android:textColor="@color/white"
+                                android:layout_marginLeft="82dp"
+                                />
+
+                            <RadioButton
+                                android:id="@+id/radioHumidity"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif-condensed-light"
+                                android:text="wilgotność"
+                                android:layout_toRightOf="@id/radioTemperature"
+                                android:checked="true"
+                                android:textSize="20dp"
+                                android:textColor="@color/white"
+                                android:layout_marginLeft="82dp"
+                                />
+
+                            <RadioButton
+                                android:id="@+id/radioPressure"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif-condensed-light"
+                                android:text="ciśnienie"
+                                android:checked="false"
+                                android:textSize="20dp"
+                                android:textColor="@color/white"
+                                android:layout_marginLeft="82dp" />
+
+
+
+                            </RadioGroup>
+
+
+
+                            <TextView
+                                android:id="@+id/type"
+                                android:layout_below="@id/radioGroupStat"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:layout_marginTop="5dp"
+                                android:paddingTop="5dp"
+                                android:text="Rodzaj wykresu"
+                                android:textColor="@color/white"
+                                android:textSize="18dp"
+                                android:fontFamily="sans-serif-condensed-light"
+                                android:textAlignment="center"
+                                android:background="@drawable/back2"/>
+
+                            <RadioGroup
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/type"
+                                android:layout_centerHorizontal="true"
+                                android:orientation="vertical"
+                                android:layout_marginTop="10dp"
+                                android:id="@+id/radioGroupType" >
+
+
+
+                                <RadioButton
+                                    android:id="@+id/classic"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="sans-serif-condensed-light"
+                                    android:text="klasyczny wyres słupkowy"
+                                    android:textSize="18dp"
+                                    android:checked="false"
+                                    android:textColor="@color/white"
+                                    android:layout_marginLeft="20dp"
+                                    />
+
+                                <RadioButton
+                                    android:id="@+id/mediana"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="sans-serif-condensed-light"
+                                    android:text="wykres ilości wystapień wartości"
+                                    android:layout_toRightOf="@id/radioTemperature"
+                                    android:checked="true"
+                                    android:textSize="17dp"
+                                    android:textColor="@color/white"
+                                    android:layout_marginLeft="20dp"
+                                    />
+
+
+
+
+
+                            </RadioGroup>
+
+
+
+
+
+
+                            <TextView
+                                android:id="@+id/graph1bnt"
+                                android:layout_below="@id/radioGroupType"
+                                android:layout_width="180dp"
+                                android:layout_height="35dp"
+                                android:layout_marginTop="10dp"
+                                android:paddingTop="5dp"
+                                android:text="Zatwiedź"
+                                android:textColor="@color/white"
+                                android:textSize="18dp"
+                                android:fontFamily="sans-serif-condensed-light"
+                                android:textAlignment="center"
+                                android:background="@drawable/back2"
+                                android:layout_marginBottom="15dp"
+                                android:layout_marginLeft="60dp"/>
+
+
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+
+
+
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.SettingsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/back1"
+        android:layout_margin="20dp"
+        android:orientation="horizontal">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/settingsTitle"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/back2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:gravity="center"
+                    android:text="Ustawienia aplikacji"
+                    android:textColor="@color/white"
+                    android:textSize="24dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/intervalSettings"
+                android:layout_below="@+id/settingsTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="@drawable/back2"
+                android:orientation="horizontal"
+                android:elevation="8dp">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/headerInterval"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:elevation="2dp"
+                        android:padding="5dp"
+                        android:background="@drawable/back3">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Interwał czasowy pomiarów"
+                            android:fontFamily="sans-serif-condensed-light"
+                            android:textColor="@color/white"
+                            android:textSize="20dp"
+                            android:textAlignment="center"/>
+
+                    </LinearLayout>
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/headerInterval"
+                        android:layout_centerHorizontal="true"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/radioGroup" >
+
+
+                        <RadioButton
+                            android:id="@+id/radio15min"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed-light"
+                            android:text="15 min"
+                            android:textSize="20dp"
+                            android:checked="false"
+                            android:textColor="@color/white"
+                            android:layout_marginLeft="12dp"
+                           />
+
+                        <RadioButton
+                            android:id="@+id/radio30min"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed-light"
+                            android:text="30 min"
+                            android:checked="true"
+                            android:textSize="20dp"
+                            android:textColor="@color/white"
+                            android:layout_marginLeft="12dp"
+                            />
+
+                        <RadioButton
+                            android:id="@+id/radio60min"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed-light"
+                            android:text="60 min"
+                            android:checked="false"
+                            android:textSize="20dp"
+                            android:textColor="@color/white"
+                            android:layout_marginLeft="12dp" />
+
+
+
+                    </RadioGroup>
+
+                    <LinearLayout
+                        android:id="@+id/timeIntervalBnt"
+                        android:layout_width="150dp"
+                        android:layout_height="35dp"
+                        android:layout_below="@id/radioGroup"
+                        android:background="@drawable/back3"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:paddingTop="3dp"
+                        android:layout_centerHorizontal="true">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Zatwierdź"
+                            android:fontFamily="sans-serif-condensed-light"
+                            android:textColor="@color/white"
+                            android:textSize="20dp"
+                            android:textAlignment="center"
+                            />
+
+
+                    </LinearLayout>
+
+
+
+
+
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/notificationSettingd"
+                android:layout_below="@+id/intervalSettings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/back2"
+                android:orientation="horizontal"
+                android:elevation="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/headerNotifications"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:elevation="2dp"
+                        android:padding="5dp"
+                        android:background="@drawable/back3">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Ustawienia powiadomień"
+                            android:fontFamily="sans-serif-condensed-light"
+                            android:textColor="@color/white"
+                            android:textSize="20dp"
+                            android:textAlignment="center"/>
+
+                    </LinearLayout>
+
+                    <CheckBox
+                        android:id="@+id/checkboxTemperature"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/headerNotifications"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="sans-serif-condensed-light"
+                        android:text="   Włącz powiadomienia temperatury"
+                        android:textColor="@color/white"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/minTemp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/checkboxTemperature"
+                        android:layout_marginLeft="25dp"
+                        android:fontFamily="sans-serif-condensed-light"
+                        android:paddingTop="3dp"
+                        android:text="Mniejszej od: "
+                        android:textColor="@color/white"
+                        android:textSize="18dp" />
+
+                    <EditText
+                        android:id="@+id/minTempInput"
+                        android:layout_width="120dp"
+                        android:layout_height="41dp"
+                        android:enabled="true"
+                        android:hint="Podaj min"
+                        android:layout_toRightOf="@id/minTemp"
+                        android:layout_below="@+id/checkboxTemperature"
+                        android:inputType="number"/>
+
+                    <TextView
+                        android:id="@+id/maxTemp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/minTempInput"
+                        android:layout_marginLeft="25dp"
+                        android:fontFamily="sans-serif-condensed-light"
+                        android:paddingTop="3dp"
+                        android:text="Większej od: "
+                        android:textColor="@color/white"
+                        android:textSize="18dp" />
+
+
+                    <EditText
+                        android:id="@+id/maxTempInput"
+                        android:layout_width="120dp"
+                        android:layout_height="41dp"
+                        android:hint="podaj max"
+                        android:layout_toRightOf="@id/maxTemp"
+                        android:layout_below="@+id/minTempInput"
+                        android:inputType="number"/>
+
+
+                    <CheckBox
+                        android:id="@+id/checkboxHumidity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_below="@id/maxTemp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="sans-serif-condensed-light"
+                        android:text="   Włącz powiadomienia wilgotności"
+                        android:textColor="@color/white"
+                        android:textSize="18dp" />
+
+
+                    <TextView
+                        android:id="@+id/minHum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/checkboxHumidity"
+                        android:fontFamily="sans-serif-condensed-light"
+                        android:text="Mniejszej od: "
+                        android:layout_marginLeft="25dp"
+                        android:textColor="@color/white"
+                        android:paddingTop="3dp"
+                        android:textSize="18dp" />
+
+                    <EditText
+                        android:id="@+id/minHumInput"
+                        android:layout_width="120dp"
+                        android:layout_height="41dp"
+                        android:hint="Podaj min"
+                        android:layout_toRightOf="@id/minHum"
+                        android:layout_below="@+id/checkboxHumidity"
+                        android:inputType="number"/>
+
+                    <TextView
+                        android:id="@+id/maxHum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/minHumInput"
+                        android:fontFamily="sans-serif-condensed-light"
+                        android:paddingTop="3dp"
+                        android:text="Większej od: "
+                        android:textColor="@color/white"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="18dp" />
+
+
+                    <EditText
+                        android:id="@+id/maxHumInput"
+                        android:layout_width="120dp"
+                        android:layout_height="41dp"
+                        android:hint="podaj max"
+                        android:layout_toRightOf="@id/maxHum"
+                        android:layout_below="@+id/minHumInput"
+                        android:inputType="number"/>
+
+
+                    <CheckBox
+                        android:id="@+id/checkboxPressure"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_below="@id/maxHumInput"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="sans-serif-condensed-light"
+                        android:text="   Włącz powiadomienia ćiśnienia"
+                        android:textColor="@color/white"
+                        android:textSize="18dp" />
+
+
+
+                    <TextView
+                        android:id="@+id/minPres"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/checkboxPressure"
+                        android:fontFamily="sans-serif-condensed-light"
+                        android:text="Mniejszej od: "
+                        android:layout_marginLeft="25dp"
+                        android:textColor="@color/white"
+                        android:paddingTop="3dp"
+                        android:textSize="18dp" />
+
+                    <EditText
+                        android:id="@+id/minPressInput"
+                        android:layout_width="120dp"
+                        android:layout_height="41dp"
+                        android:hint="Podaj min"
+                        android:layout_toRightOf="@id/minPres"
+                        android:layout_below="@+id/checkboxPressure"
+                        android:inputType="number"/>
+
+                    <TextView
+                        android:id="@+id/maxPress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/minPressInput"
+                        android:fontFamily="sans-serif-condensed-light"
+                        android:paddingTop="3dp"
+                        android:text="Większej od: "
+                        android:textColor="@color/white"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="18dp" />
+
+
+                    <EditText
+                        android:id="@+id/maxPressInput"
+                        android:layout_width="120dp"
+                        android:layout_height="41dp"
+                        android:hint="podaj max"
+                        android:layout_toRightOf="@id/maxHum"
+                        android:layout_below="@+id/minPressInput"
+                        android:inputType="number"/>
+
+
+
+
+                    <LinearLayout
+                        android:id="@+id/notificationsBnt"
+                        android:layout_width="150dp"
+                        android:layout_height="35dp"
+                        android:layout_below="@id/maxPressInput"
+                        android:background="@drawable/back3"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:paddingTop="3dp"
+                        android:layout_centerHorizontal="true">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Zatwierdź"
+                            android:fontFamily="sans-serif-condensed-light"
+                            android:textColor="@color/white"
+                            android:textSize="20dp"
+                            android:textAlignment="center" />
+
+
+                    </LinearLayout>
+
+
+
+
+
+
+
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/buttons"
+                android:layout_below="@+id/notificationSettingd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/back2"
+                android:orientation="horizontal"
+                android:elevation="8dp">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+
+
+
+                    <LinearLayout
+                        android:id="@+id/delete_button"
+                        android:layout_width="270dp"
+                        android:layout_height="45dp"
+                        android:background="@drawable/back3"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="25dp"
+                        android:paddingTop="3dp"
+                        android:layout_centerHorizontal="true">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Wyczyść baze danych"
+                            android:fontFamily="sans-serif-condensed-light"
+                            android:textColor="@color/white"
+                            android:paddingTop="5dp"
+                            android:textSize="20dp"
+                            android:textAlignment="center"
+
+
+                            />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/delete_nots_button"
+                        android:layout_width="270dp"
+                        android:layout_below="@id/delete_button"
+                        android:layout_height="45dp"
+                        android:background="@drawable/back3"
+                        android:layout_marginBottom="15dp"
+                        android:paddingTop="3dp"
+                        android:layout_centerHorizontal="true">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Wyczyść baze powiadomień"
+                            android:fontFamily="sans-serif-condensed-light"
+                            android:textColor="@color/white"
+                            android:textSize="20dp"
+                            android:paddingTop="5dp"
+                            android:textAlignment="center"
+
+
+                            />
+
+
+                    </LinearLayout>
+
+
+
+
+
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+
+
+
+        </RelativeLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

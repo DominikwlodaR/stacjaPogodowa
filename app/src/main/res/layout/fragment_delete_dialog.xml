@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2588FA">
+
+    <LinearLayout
+        android:id="@+id/info"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="20dp"
+        android:padding="10dp"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:elevation="6dp"
+        tools:ignore="MissingConstraints">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="15dp"
+                android:paddingTop="50dp"
+                android:paddingBottom="50dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:id="@+id/title"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:text="Czy na pewno chcesz usunąć zawartość bazy danych?"
+                    android:textColor="@color/white"
+                    android:textSize="22dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="sans-serif-condensed-light"/>
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:id="@+id/checkBox"
+                    android:layout_below="@id/title"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    android:text="Potwierdzam"
+                    android:textColor="@color/white"
+                    android:textSize="22dp"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="sans-serif-condensed-light"/>
+
+                    <LinearLayout
+                        android:id="@+id/deleteBnt"
+                        android:layout_width="150dp"
+                        android:layout_height="35dp"
+                        android:layout_below="@id/checkBox"
+                        android:background="@drawable/back3"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginBottom="15dp"
+                        android:paddingTop="3dp"
+                        android:layout_centerHorizontal="true">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:id="@+id/confirm"
+                            android:layout_height="wrap_content"
+                            android:text="Zatwierdź"
+                            android:fontFamily="sans-serif-condensed-light"
+                            android:textColor="@color/white"
+                            android:textSize="20dp"
+                            android:textAlignment="center" />
+
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
